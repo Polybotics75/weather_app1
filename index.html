@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Polybotics weather app that tells you the current weather data of a specified location.">
+    <meta name="keywords" content="weather, polybotics, temperature, humidity">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./asset/O-SKY-FAVICON.png" type="image/x-icon">
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/network.css">
+
+    <!-- Linking Fontawesome for Icon -->
+    <link rel="stylesheet" href="./asset/fontawesomepro/css/all.css">
+    <link rel="stylesheet" href="./asset/fontawesomepro/css/fontawesome.css">
+
+    <title>Osky Weather App</title>
+</head>
+<body>
+    <main class="main-splash">
+        <div class="logo-tab center">
+            <span class="logo"><img src="./asset/O-SKY-LOGO.png" alt="Osky Logo"></span>
+        </div>
+        <div class="title-tab tc">Osky</div>
+        <div class="loader-div center">
+            <div class="loader"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-tag tc">from</div>
+            <div class="footer-name tc">Polybotics</div>
+            <div class="footer-version tc">Version 1.0.1</div>
+        </div>
+    </main>
+
+    <div style="display: none;" class="wrapper">
+        <header><i class='far fa-arrow-left'></i><span class="logo"><img src="./asset/O-SKY-LOGO.png" alt="Osky Logo"></span><span>Osky</span></header>
+        <section class="input-part">
+            <p class="info-txt"></p>
+            <div class="content">
+            <input type="text" spellcheck="false" placeholder="Enter city name" required>
+            <div class="separator"></div>
+            <button>Get Device Location</button>
+            </div>
+        </section>
+        <section class="weather-part">
+            <img src="" alt="Weather Icon">
+            <div class="temp">
+            <span class="numb">_</span>
+            <span class="deg">°</span>C
+            </div>
+            <div class="weather">_ _</div>
+            <div class="location">
+            <i class='far fa-location-dot'></i>
+            <span>_, _</span>
+            </div>
+            <div class="bottom-details">
+            <div class="column feels">
+                <i class='far fa-temperature-half'></i>
+                <div class="details">
+                <div class="temp">
+                    <span class="numb-2">_</span>
+                    <span class="deg">°</span>C
+                </div>
+                <p>Temperature</p>
+                </div>
+            </div>
+            <div class="column humidity">
+                <i class='far fa-droplet'></i>
+                <div class="details">
+                <div class="hum">_</div>
+                <p>Humidity</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div style="display: none;" class="no-network-div">
+        <div class="no-network">
+            <div class="nn-icon"><i class="far fa-wifi-slash"></i></div>
+            <div class="nn-tag">Check your internet connection</div>
+            <div onclick="reloadIndex()" class="nn-btn">Try again</div>
+        </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+    <script src="./js/network.js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.no-network-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.no-network{
+    width: 90%;
+    max-width: 400px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 1.3rem;
+}
+
+.nn-icon{
+    text-align: center;
+    font-size: 30px;
+    color: #585858;
+}
+
+.nn-tag{
+    text-align: center;
+    padding: 1rem;
+    font-size: 16px;
+    color: #121212;
+}
+
+.nn-btn{
+    width: 100%;
+    height: 3rem;
+    background: #121212;
+    border-radius: 1.3rem;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nn-btn:hover{
+    background: #585858;
+}
